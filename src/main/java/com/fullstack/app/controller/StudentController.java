@@ -25,7 +25,6 @@ public class StudentController {
     @GetMapping("/students")
     public java.util.List<Student> getAllStudents() {
         return studentService.getAllStudents();
-
     }
 
     @GetMapping("/greet")
@@ -33,13 +32,9 @@ public class StudentController {
         return "Feature branch change";
     }
 
-
-
-   //greetandmeetendpoint
     @GetMapping("/greetandmeet")
     public String greetAndMeet() {
         return "Hello! Welcome to the Greet and Meet endpoint.";
-
     }
 
 
