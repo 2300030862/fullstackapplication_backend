@@ -31,3 +31,9 @@ public class StudentController {
     public String greet() {
         return "Feature branch change";
     }
+
+
+@GetMapping("/noaccess")
+    public String access() {
+        return "no access";
+    }
