@@ -33,3 +33,7 @@ public class StudentController {
         return "Feature branch change";
     }
 }
+@GetMapping("/greet")
+    public String greet() {
+        return "Feature branch change";
+    }
