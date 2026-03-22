@@ -25,5 +25,11 @@ public class StudentController {
     @GetMapping("/students")
     public java.util.List<Student> getAllStudents() {
         return studentService.getAllStudents();
+
+    }
+
+    @GetMapping("/greet")
+    public String greet() {
+        return "Feature branch change";
     }
 }
