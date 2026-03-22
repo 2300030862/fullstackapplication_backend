@@ -18,7 +18,7 @@ public class StudentController {
     }
 
     @PostMapping("/savestudent")
-    public Student saveStudent(@RequestBody  Student student) {
+    public Student saveStudent(@RequestBody Student student) {
         return studentService.saveStudent(student);
     }
 
@@ -26,14 +26,15 @@ public class StudentController {
     public java.util.List<Student> getAllStudents() {
         return studentService.getAllStudents();
     }
-}
-@GetMapping("/greet")
+
+    @GetMapping("/greet")
     public String greet() {
         return "Feature branch change";
     }
 
 
-@GetMapping("/noaccess")
+    @GetMapping("/noaccess")
     public String access() {
         return "no access";
     }
+}
