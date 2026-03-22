@@ -27,3 +27,7 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 }
+@GetMapping("/greet")
+    public String greet() {
+        return "Feature branch change";
+    }
