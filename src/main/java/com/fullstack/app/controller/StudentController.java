@@ -18,7 +18,7 @@ public class StudentController {
     }
 
     @PostMapping("/savestudent")
-    public Student saveStudent(@RequestBody  Student student) {
+    public Student saveStudent(@RequestBody Student student) {
         return studentService.saveStudent(student);
     }
 
@@ -32,10 +32,20 @@ public class StudentController {
     public String greet() {
         return "Feature branch change";
     }
-}
+
+
 
    //greetandmeetendpoint
-@GetMapping("/greetandmeet")
-public String greetAndMeet() {
-    return "Hello! Welcome to the Greet and Meet endpoint.";
+    @GetMapping("/greetandmeet")
+    public String greetAndMeet() {
+        return "Hello! Welcome to the Greet and Meet endpoint.";
+
+    }
+
+
+    @GetMapping("/noaccess")
+    public String access() {
+        return "no access";
+    }
+}
 
