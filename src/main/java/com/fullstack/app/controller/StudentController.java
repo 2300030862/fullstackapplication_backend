@@ -32,9 +32,15 @@ public class StudentController {
         return "Feature branch change";
     }
 
+    @GetMapping("/greetandmeet")
+    public String greetAndMeet() {
+        return "Hello! Welcome to the Greet and Meet endpoint.";
+    }
+
 
     @GetMapping("/noaccess")
     public String access() {
         return "no access";
     }
 }
+
