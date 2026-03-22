@@ -42,5 +42,11 @@ public class StudentController {
     public String access() {
         return "no access";
     }
+
+    @GetMapping("/test")
+    public String testmsg()
+    {
+        return "test";
+    }
 }
 
